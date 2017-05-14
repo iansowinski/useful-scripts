@@ -1,0 +1,25 @@
+{
+  "name": "messengerbot",
+  "version": "1.0.0",
+  "description": "Messenger auto response bot",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthijsotterloo/FB-Messenger-Bot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matthijsotterloo/FB-Messenger-Bot/issues"
+  },
+  "homepage": "https://github.com/mattthijsotterloo/FB-Messenger-Bot#readme",
+  "dependencies": {
+    "facebook-chat-api": "^1.0.5",
+    "request": "^2.67.0"
+  }
+}
