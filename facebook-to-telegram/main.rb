@@ -20,14 +20,19 @@ x = 0
 Telegram::Bot::Client.run(token) do |bot|
   msg = nil
   loop do
-    a = @graph.get_connection('meetjspl', 'posts', {
-      limit: 1,
-      fields: ['message', 'id', 'from', 'type', 'picture', 'link', 'created_time', 'updated_time']
-      })
-    bot.api.send_message(chat_id: 52777787, text: a[0]['message']) if a[0]['message'] != msg
-    msg = a[0]['message']
-    # sleep 60
-    puts x
-    x = x+1
+    begin
+      a = @graph.get_connection('Reuters', 'posts', {
+        limit: 1,
+        fields: ['message', 'id', 'from', 'type', 'picture', 'link', 'created_time', 'updated_time']
+        })
+      bot.api.send_message(chat_id: 52777787, text: a[0]['message']) if a[0]['message'] != msg
+      msg = a[0]['message']
+      sleep 60
+      puts x
+      x = x+1
+    rescue
+      sleep 60
+      puts "error"
+    end
   end
 end
