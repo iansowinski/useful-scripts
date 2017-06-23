@@ -11,8 +11,8 @@ def time
   return var
 end
 
-width = 11811 
-height = 8268
+width = 1181#1 
+height = 826#8
 
 img = Image.read("123.jpg").first()
 puts "loading#{time()}"
@@ -49,7 +49,7 @@ a.each_with_index do |channel, index|
   channel = channel.rotate(degrees[index])
   puts time()
 
-  channel = channel.crop(channel.columns/2, channel.rows/2, org_width, org_height)
+  # channel = channel.crop(channel.columns/2, channel.rows/2, org_width, org_height)
   
   print "#{channels[index]}: writing"
   channel.write("#{channels[index]}.jpg")

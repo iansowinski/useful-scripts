@@ -1,4 +1,5 @@
 ip
 config
 backup.rb
+config.json
 facebook-to-telegram/config.json
