@@ -3,7 +3,7 @@ require 'koala'
 require 'json'
 require 'net/http'
 
-config_json = JSON.parse(File.read('config.json'))
+config_json = JSON.parse(File.read('config'))
 token = config_json['telegram']['token']
 subscribed = config_json['facebook']['subscribed']
 

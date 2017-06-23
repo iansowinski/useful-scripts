@@ -1,6 +1,4 @@
 ip
-config
 backup.rb
-config.json
 *.lock
-facebook-to-telegram/config.json
+config
