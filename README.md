@@ -5,3 +5,8 @@
 - `raster.rb` - experimantal script for automating process of prepering negatives for CMYK screen printing
 - `images_to_anki.rb` - based on list of files in directory, script is creating csv file for anki. Files then should be moved to anki media folder and csv should be imported as new deck
 - `processExcel.go` - file created for extracting single cells from excell file with a lot of sheets in the same template (may be useful to edit)
+- `wordpressSetup` - dir with docker-compose for easy wordpress fixes for various clients websites. Workflow goes like this:
+  - Install [All-in-One WP Migration](https://pl.wordpress.org/plugins/all-in-one-wp-migration/) on client's instance of wordpress and export full backup to files on your machine.
+  - Copy `docker-compose.yml` to desired development directory and run `docker-compose up` there.
+  - Install wordpress and mentioned migration plugin.
+  - Import backup and work :)
